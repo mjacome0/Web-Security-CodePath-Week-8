@@ -23,8 +23,12 @@ Steps to recreate:
   3. You can now log in to the same account on the new browser without having to enter a password.
 ![](sessionHijack.gif)
 
-Vulnerability #2: __________________
-
+Vulnerability #2: SQL Injection (SQLi)
+Steps to recreate:
+  1. Visit the page of any sales person.
+  2. In the url, instead of ```id=1```, write ```id=' OR SLEEP(5)=0--'```
+  3. This causes the page to continue loading for the specified amount of time in seconds. Another thing to note is that the page always goes to "Daron Burke" regardless of who you were previously viewing. 
+![](sqli.gif)
 
 ## Green
 
