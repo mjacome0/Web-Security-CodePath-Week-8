@@ -53,7 +53,7 @@ Steps to recreate:
   ```<script>alert('Hacked now');</script>```
   2. Now when a user logs in and checks the feedback, the script will be ran
   
-Curently someone else added a script that redirects to youtube when the user checks the feedback so my script isn't ran. The other developers made it so that the text is displayed buit the script isn't ran. I will try to record the gif of my script working at a later date when the page no longer redirects. Since someone managed to redirect to youtube, I'm assuming my script would work as well. 
+Currently someone else added a script that redirects to youtube when the user checks the feedback so my script isn't ran. The other developers made it so that the text is displayed but the script isn't ran. I will try to record the gif of my script working at a later date when the page no longer redirects. Since someone managed to redirect to youtube, I'm assuming my script would work as well. 
 
 ![](xss.gif)
 
@@ -71,7 +71,7 @@ Steps to recreate:
 
 Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
-Steps to recrete:
+Steps to recreate:
   1. Logging in and running the html file causes the users name to be changed according to the info entered in the html file. 
   
   ![](csrf.gif)
@@ -80,3 +80,4 @@ Steps to recrete:
 ## Notes
 
 Describe any challenges encountered while doing the work
+The biggest challenge was the Cross-Site Scripting vulnerability. This was mainly because other people are running there scripts at the same time that I try to test mine. This was the last vulnerability I found and the green and red developers clearly checked for this so by process of elimination it has to be green with the vulnerability. Finding the sqli vulnerability was also a bit difficult. This is probably because the returned table has an expected return size or there is some restrictions on the user input. I had to use the SQL query provided in the hint. Lastly, Cross-Site Request Forgery gave some problems because we wanted the code to be stealthy. Seeing how to hide the results took some time. The rest of the vulnerabilities were pretty easy since they used the same pattern that we've learned throughout the course.
