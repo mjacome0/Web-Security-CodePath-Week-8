@@ -5,12 +5,12 @@ Time spent: **X** hours spent in total
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
 The six possible exploits are:
-* Username Enumeration
-* Insecure Direct Object Reference (IDOR)
-* SQL Injection (SQLi)
-* Cross-Site Scripting (XSS)
-* Cross-Site Request Forgery (CSRF)
-* Session Hijacking/Fixation
+* Username Enumeration - Found Green
+* Insecure Direct Object Reference (IDOR) - Found Red
+* SQL Injection (SQLi) - Found Blue 
+* Cross-Site Scripting (XSS) - Found Green
+* Cross-Site Request Forgery (CSRF) - Found Red
+* Session Hijacking/Fixation - Found Blue 
 
 Each version of the site has been given two of the six vulnerabilities. (In other words, all six of the exploits should be assignable to one of the sites.)
 
@@ -46,7 +46,16 @@ Steps to recreate:
   
   ![](userEnum.gif)
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Scripting (XSS)
+
+Steps to recreate:
+  1. Go to the contact tab and fill out the form with the following inside the feedback section:
+  ```<script>alert('Hacked now');</script>```
+  2. Now when a user logs in and checks the feedback, the script will be ran
+  
+Curently someone else added a script that redirects to youtube when the user checks the feedback so my script isn't ran. The other developers made it so that the text is displayed buit the script isn't ran. I will try to record the gif of my script working at a later date when the page no longer redirects. Since someone managed to redirect to youtube, I'm assuming my script would work as well. 
+
+![](xss.gif)
 
 
 ## Red
