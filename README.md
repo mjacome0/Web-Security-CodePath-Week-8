@@ -17,6 +17,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: Session Hijacking/Fixation
+
 Steps to recreate:
   1. Log in on one browser and use the change_session_id.php script to get your session ID.
   2. On a different browser, change your session ID to match the previous one.
@@ -24,6 +25,7 @@ Steps to recreate:
 ![](sessionHijack.gif)
 
 Vulnerability #2: SQL Injection (SQLi)
+
 Steps to recreate:
   1. Visit the page of any sales person.
   2. In the url, instead of ```id=1```, write ```id=' OR SLEEP(5)=0--'```
