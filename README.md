@@ -51,7 +51,14 @@ Vulnerability #2: __________________
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Insecure Direct Object Reference (IDOR)
+
+Steps to recreate:
+  1. You can view any salesperson's page by changing the value of the id in the url
+
+  ID 10 shouldn't be accessible by a user that is not logged in. The other two developers ensured that the page redirects when trying to access the salesperson with ID number 10.
+  
+  ![](idor.gif)
 
 Vulnerability #2: __________________
 
