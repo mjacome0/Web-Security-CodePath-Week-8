@@ -60,7 +60,12 @@ Steps to recreate:
   
   ![](idor.gif)
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Request Forgery (CSRF)
+
+Steps to recrete:
+  1. Logging in and running the html file causes the users name to be changed according to the info entered in the html file. 
+  
+  ![](csrf.gif)
 
 
 ## Notes
