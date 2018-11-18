@@ -39,8 +39,9 @@ Steps to recreate:
 Vulnerability #1: Username Enumeration
 
 Steps to recreate:
-  1. Trying to log in with a username that exists results in bold text saying failed to log in. The text's html class is also listed as "failure"
-  2. Trying to log in with a username that doesn't exist results in a non-bold text saying failed to log in. The text's html class is also listed as "failed"
+  1. Trying to log in with a username that exists results in bold text saying failed to log in. The text's html class is also listed as "failure".
+  2. Trying to log in with a username that doesn't exist results in a non-bold text saying failed to log in. The text's html class is also listed as "failed".
+  
   The green developer made different classes for a username that does exist and a username that doesn't exist. The other two developers use the same "failure" class for both cases. 
   ![](userEnum.gif)
 
